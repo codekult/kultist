@@ -15,7 +15,7 @@
 
 
 // Include theme-specific fonts
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,600,600italic,800');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300italic,700,700italic,900');
 @import url('https://fonts.googleapis.com/css?family=Cousine:400,400italic');
 
 // Colors
@@ -31,12 +31,12 @@ $green: #bceb75;
 $backgroundColor: $darkPurple;
 
 // Typo
-$mainFont: 'Open Sans', sans-serif;
+$mainFont: 'Lato', sans-serif;
 $mainFontSize: 38px;
 $mainColor: $white;
 
 $normalWeight: 300;
-$boldWeight: 600;
+$boldWeight: 700;
 $ultraBoldWeight: 900;
 
 // Headings
@@ -95,6 +95,14 @@ $codeFont: 'Cousine', monospace;
 .reveal dt,
 .reveal table th {
 	font-weight: $boldWeight;
+}
+
+.reveal a {
+    border-bottom: dashed 1px $linkColor;
+}
+
+.reveal a:hover {
+    border-bottom: dashed 1px $linkColorHover;
 }
 
 .reveal pre {
