@@ -9,18 +9,18 @@ Kultist theme by codekult (https://github.com/codekult/kultist)
   display: block;
   overflow-x: auto;
   padding: 0.5em;
-  background: #1d1f21;
+  background: #171717;
   -webkit-text-size-adjust: none;
 }
 
 /*selection color*/
 .hljs::selection,
 .hljs span::selection {
-	background: #373b41;
+	background: #4a4752;
 }
 .hljs::-moz-selection,
 .hljs span::-moz-selection {
-	background: #373b41;
+	background: #4a4752;
 }
 
 /*foreground color*/
@@ -32,7 +32,7 @@ Kultist theme by codekult (https://github.com/codekult/kultist)
 .hljs-class .hljs-params,
 .hljs-function .hljs-params,
 .hljs-at_rule .hljs-preprocessor {
-  color: #c5c8c6;
+  color: #d7dad8;
 }
 
 /*color: fg_yellow*/
@@ -45,7 +45,7 @@ Kultist theme by codekult (https://github.com/codekult/kultist)
 .hljs-header,
 .hljs-sub,
 .hljs-function {
-  color: #f0c674;
+  color: #fdde66;
 }
 
 /*color: fg_comment*/
@@ -55,7 +55,7 @@ Kultist theme by codekult (https://github.com/codekult/kultist)
 .hljs-pi,
 .hljs-shebang,
 .hljs-doctype {
-  color: #707880;
+  color: #686868;
 }
 
 /*color: fg_red*/
@@ -69,7 +69,7 @@ Kultist theme by codekult (https://github.com/codekult/kultist)
 .hljs-hexcolor,
 .hljs-input .hljs-prompt,
 .hljs-char {
- color: #cc6666
+ color: #cc3e6e
 }
 
 /*color: fg_green*/
@@ -82,7 +82,7 @@ Kultist theme by codekult (https://github.com/codekult/kultist)
 .hljs-at.rule .hljs-keyword,
 .hljs-regexp,
 .hljs-attr_selector {
-  color: #b5bd68;
+  color: #57c992;
 }
 
 /*color: fg_purple*/
@@ -96,7 +96,7 @@ Kultist theme by codekult (https://github.com/codekult/kultist)
 .hljs-variable .hljs-filter,
 .hljs-variable .hljs-filter .hljs-keyword,
 .hljs-template_tag .hljs-filter .hljs-keyword {
- color: #b294bb;
+ color: #9174c4;
 }
 
 /*color: fg_blue*/
@@ -114,7 +114,7 @@ Kultist theme by codekult (https://github.com/codekult/kultist)
 .hljs-method,
 .hljs-list .hljs-title,
 .hljs-tag {
- color: #81a2be;
+ color: #56c9db;
 }
 
 /*color: fg_aqua*/
@@ -134,7 +134,7 @@ Kultist theme by codekult (https://github.com/codekult/kultist)
 .hljs-at_rule,
 .hljs-at_rule .hljs-string,
 .hljs-at_rule .hljs-keyword {
-  color: #8abeb7;
+  color: #3af1e9;
 }
 
 
@@ -152,7 +152,7 @@ Kultist theme by codekult (https://github.com/codekult/kultist)
 .hljs-quoted,
 .hljs-class,
 .hljs-header {
-  color: #de935f;
+  color: #ff6a68;
 }
 
 .hljs-emphasis

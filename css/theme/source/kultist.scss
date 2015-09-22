@@ -14,26 +14,115 @@
 // ---------------------------------------------
 
 
-
 // Include theme-specific fonts
-@import url(https://fonts.googleapis.com/css?family=News+Cycle:400,700);
-@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,600,600italic,800');
+@import url('https://fonts.googleapis.com/css?family=Cousine:400,400italic');
 
+// Colors
+$black: #171717;
+$white: #f6f6f6;
+$foreground: #d7dad8;
+$darkPurple: #352e48;
+$yellow: #ffb645;
+$lightYellow: #f5c782;
+$green: #bceb75;
 
 // Override theme settings (see ../template/settings.scss)
-$mainFont: 'Lato', sans-serif;
-$mainColor: #000;
-$headingFont: 'News Cycle', Impact, sans-serif;
-$headingColor: #000;
+$backgroundColor: $darkPurple;
+
+// Typo
+$mainFont: 'Open Sans', sans-serif;
+$mainFontSize: 38px;
+$mainColor: $white;
+
+$normalWeight: 300;
+$boldWeight: 600;
+$ultraBoldWeight: 900;
+
+// Headings
+$headingFont: $mainFont;
+$headingColor: $mainColor;
+$headingFontWeight: $boldWeight;
 $headingTextShadow: none;
 $headingTextTransform: none;
-$backgroundColor: #fff;
-$linkColor: #00008B;
-$linkColorHover: lighten( $linkColor, 20% );
-$selectionBackgroundColor: rgba(0, 0, 0, 0.99);
 
+$heading1Size: 3em;
+$heading2Size: 1.5em;
+$heading3Size: 1.2em;
+$heading4Size: 1.00em;
 
+$heading1FontWeight: $ultraBoldWeight;
+$heading2FontWeight: $normalWeight;
+
+$heading2Color: $yellow;
+$heading3Color: $green;
+
+// Links
+$linkColor: $yellow;
+$linkColorHover: $lightYellow;
+
+// Selection
+$selectionBackgroundColor: lighten($backgroundColor, 20%);
+
+// Code
+$codeFont: 'Cousine', monospace;
 
 // Theme template ------------------------------
 @import "../template/theme";
 // ---------------------------------------------
+
+// Custom rules
+.reveal {
+    font-weight: $normalWeight;
+}
+
+.reveal h1 {
+    font-weight: $heading1FontWeight;
+}
+
+.reveal h2 {
+    color: $heading2Color;
+    font-weight: $heading2FontWeight;
+    font-style: italic;
+}
+
+.reveal h3 {
+    color: $heading3Color;
+}
+
+.reveal strong,
+.reveal b,
+.reveal dt,
+.reveal table th {
+	font-weight: $boldWeight;
+}
+
+.reveal pre {
+    width: 100%;
+    font-size: 0.6em;
+	font-family: $codeFont;
+	line-height: 1.3em;
+    box-shadow: none;
+}
+
+.reveal code {
+	font-family: $codeFont;
+}
+
+.reveal p code {
+  padding: 0.2em 0.3em 0.1em;
+  font-size: 0.75em;
+  background: darken($backgroundColor, 5%);
+  border-radius: 3px;
+}
+
+.reveal pre code {
+    padding: .5em;
+    max-height: 50%;
+    background: $black;
+	color: $foreground;
+}
+
+.reveal .progress span {
+    background: lighten($backgroundColor, 15%);
+}
